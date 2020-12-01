@@ -1,17 +1,28 @@
 import string
 
 from django.contrib.auth import get_user_model
+from django.core.validators import RegexValidator
 from django.db import models
+
+from event.validators import validate_start_date, validate_end_date
 
 
 class Event(models.Model):
 
-    name = models.CharField(max_length=50)
-    description = models.TextField(max_length=500)
+    #può contenere solo caratteri e numeri
+    name = models.CharField(max_length=50, validators=[RegexValidator(r'^[a-zA-Z0-9]+$')])
+    #può contenere solo caratteri e numeri
+    description = models.CharField(max_length=500, validators=[RegexValidator(r'^[a-zA-Z0-9]+$')])
+    #assegnazione automatica
     author = models.ForeignKey(get_user_model(),on_delete=models.CASCADE)
-    start_date = models.DateTimeField()
-    end_date = models.DateTimeField()
-    location = models.CharField(max_length=50)
+    #solo date future
+    start_date = models.DateTimeField() #validators=[validate_start_date])
+    #non può essere prima della start date
+    end_date = models.DateTimeField()#validators=[validate_end_date])
+    #può contenere solo caratteri e numeri
+    location = models.CharField(max_length=50, validators=[RegexValidator(r'^[a-zA-Z0-9]+$')])
+
+
     #priority = models.TextChoices('priority','ALTO MEDIO BASSO')
     #category = models.TextChoices('category','LAVORO FAMIGLIA SVAGO')
 
