@@ -10,7 +10,9 @@ from event.validators import validate_start_date, validate_end_date
 def priority_choices():
     choices = [(0,'ALTO'),(1,'MEDIO'),(2,'BASSO')]
     return choices
-
+def category_choices():
+    choices = [(1,'LAVORO'),(2,'SVAGO'),(3,'FAMIGLIA'),(4,'SCUOLA')]
+    return choices
 
 
 class Event(models.Model):
@@ -30,7 +32,7 @@ class Event(models.Model):
 
     priority = models.IntegerField(choices=priority_choices())
 
-    category = models.IntegerField(choices=[(1,'LAVORO'),(2,'SVAGO'),(3,'FAMIGLIA'),(4,'SCUOLA')])
+    category = models.IntegerField(choices=category_choices())
 
 
     def __str__(self):

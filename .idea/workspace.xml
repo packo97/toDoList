@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0e9f00-f061-4de9-9e90-5227c78e5e6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/event/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/event/migrations/0006_auto_20201203_1645.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/toDoList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/toDoList.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="7cfbbd53-b275-4698-8776-296fcf5623c1" />
+  <component name="JupyterTrust" id="2732f89b-bb8c-406f-9244-b92f586f459c" />
   <component name="ProjectId" id="1ksJ4gvwlbMesYqHFuHVrZ1dTrH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -201,6 +222,7 @@
       <workItem from="1606483699533" duration="307000" />
       <workItem from="1606553155793" duration="6051000" />
       <workItem from="1606829315777" duration="9122000" />
+      <workItem from="1607009589818" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="the project is linked to git">
       <created>1606484346221</created>
@@ -243,6 +265,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="the project is linked to git" />
     <MESSAGE value="Setup Django REST Framework with CORS and documentation and initial definition of the model 'Event'" />
@@ -263,26 +296,30 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="746" y="347" width="424" height="496" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1606831770589" />
-    <state width="1874" height="306" key="GridCell.Tab.0.bottom" timestamp="1607006785658">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="791" height="252" key="GridCell.Tab.0.bottom" timestamp="1607011451604">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="791" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607011451604" />
     <state width="1874" height="306" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1607006785658" />
-    <state width="1874" height="306" key="GridCell.Tab.0.center" timestamp="1607006785657">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="791" height="252" key="GridCell.Tab.0.center" timestamp="1607011451604">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="791" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607011451604" />
     <state width="1874" height="306" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1607006785657" />
-    <state width="1874" height="306" key="GridCell.Tab.0.left" timestamp="1607006785657">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="791" height="252" key="GridCell.Tab.0.left" timestamp="1607011451604">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="791" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607011451604" />
     <state width="1874" height="306" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1607006785657" />
-    <state width="1874" height="306" key="GridCell.Tab.0.right" timestamp="1607006785657">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="791" height="252" key="GridCell.Tab.0.right" timestamp="1607011451604">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="791" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607011451604" />
     <state width="1874" height="306" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1607006785657" />
-    <state x="403" y="78" width="1016" height="742" key="SettingsEditor" timestamp="1607004430151">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="440" y="115" width="1016" height="742" key="SettingsEditor" timestamp="1607009997494">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606483471714" />
+    <state x="440" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607009997494" />
     <state x="403" y="78" width="1016" height="742" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1607004430151" />
     <state x="558" y="275" width="800" height="540" key="Vcs.Push.Dialog.v2" timestamp="1607006881212">
       <screen x="0" y="27" width="1920" height="1053" />
@@ -294,13 +331,13 @@
     <state x="744" y="464" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1606554053205" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_description.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_description Coverage Results" MODIFIED="1606837932278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_name.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_name Coverage Results" MODIFIED="1606834242933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_after_current_date.coverage" NAME="pytest for test_models.test_startDate_is_after_current_date Coverage Results" MODIFIED="1606837854338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number.coverage" NAME="pytest for test_models.test_check_only_characters_and_number Coverage Results" MODIFIED="1606833023042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_description.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_description Coverage Results" MODIFIED="1606837932278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_name Coverage Results" MODIFIED="1606832776683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_location.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_location Coverage Results" MODIFIED="1606838379583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_location.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_location Coverage Results" MODIFIED="1606838445058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number.coverage" NAME="pytest for test_models.test_check_only_characters_and_number Coverage Results" MODIFIED="1606833023042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_after_current_date.coverage" NAME="pytest for test_models.test_startDate_is_after_current_date Coverage Results" MODIFIED="1606837854338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_500_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_500_characters_for_name Coverage Results" MODIFIED="1606833810526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
   </component>
 </project>

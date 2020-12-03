@@ -15,3 +15,11 @@ class EventViewSet(viewsets.ModelViewSet):
     permissions_classes = [IsAuthorOrReadOnly, IsAuthenticated]
     queryset = Event.objects.all()
     serializer_class = EventSerializer
+
+class EventByAuthorViewSet(viewsets.ModelViewSet):
+    permission_classes = [IsAuthenticated]
+    serializer_class = EventSerializer
+
+    def get_queryset(self):
+        return Event.objects.filter(author=self.request.user)
+    
