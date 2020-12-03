@@ -4,7 +4,7 @@ from event.views import EventViewSet, EventByAuthorViewSet
 
 router = SimpleRouter()
 
-router.register('', EventViewSet, basename='events')
-router.register('by-author', EventByAuthorViewSet, basename='events-by-author')
+#router.register('', EventViewSet, basename='events')
+router.register('', EventByAuthorViewSet, basename='events-by-author')
 
 urlpatterns = router.urls
