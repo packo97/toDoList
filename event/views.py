@@ -1,13 +1,17 @@
 from django.shortcuts import render
 
 # Create your views here.
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets, permissions, serializers
+from rest_framework.permissions import IsAuthenticated
 
-from event.models import Event
+from event.models import Event, priority_choices
+from event.permissions import IsAuthorOrReadOnly
 from event.serializers import EventSerializer
 
 
 class EventViewSet(viewsets.ModelViewSet):
 
+    #permissions_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permissions_classes = [IsAuthorOrReadOnly, IsAuthenticated]
     queryset = Event.objects.all()
     serializer_class = EventSerializer

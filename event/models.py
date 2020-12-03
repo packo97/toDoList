@@ -7,6 +7,12 @@ from django.db import models
 from event.validators import validate_start_date, validate_end_date
 
 
+def priority_choices():
+    choices = [(0,'ALTO'),(1,'MEDIO'),(2,'BASSO')]
+    return choices
+
+
+
 class Event(models.Model):
 
     #può contenere solo caratteri e numeri
@@ -22,7 +28,7 @@ class Event(models.Model):
     #può contenere solo caratteri e numeri
     location = models.CharField(max_length=50, validators=[RegexValidator(r'^[a-zA-Z0-9]+$')])
 
-    priority = models.IntegerField(choices=[(1,'ALTO'),(2,'MEDIO'),(3,'BASSO')])
+    priority = models.IntegerField(choices=priority_choices())
 
     category = models.IntegerField(choices=[(1,'LAVORO'),(2,'SVAGO'),(3,'FAMIGLIA'),(4,'SCUOLA')])
 
