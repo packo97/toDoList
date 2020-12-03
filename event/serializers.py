@@ -6,7 +6,7 @@ from event.models import Event, priority_choices, category_choices
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
         fields = (
-        'id', 'name', 'description', 'author', 'start_date', 'end_date', 'location', 'priority_name', 'category_name',)
+        'id', 'name', 'description', 'author', 'start_date', 'end_date', 'location', 'priority', 'priority_name','category', 'category_name',)
         model = Event
 
     priority_name = serializers.SerializerMethodField(read_only=True)
