@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 
 from event.models import Event
 from event.serializers import EventSerializer

@@ -23,9 +23,16 @@ API_DESCRIPTION = 'A Web Api for saving appointment'
 
 urlpatterns = [
     path('adm_ptnmd/', admin.site.urls),
+    path('api-auth/', include('rest_framework.urls')),
     path('docs/', include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
     path('schema/', get_schema_view(title=API_TITLE)),
+    path('api/v1/events', include('event.urls')),
+    path('api/v1/auth', include('dj_rest_auth.urls')),
+    path('api/v1/auth/registation', include('dj_rest_auth.registration.urls')),
     path('api/v1/', include('event.urls')),
+
+
+
 ]
 
 

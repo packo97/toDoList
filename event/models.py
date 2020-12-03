@@ -18,13 +18,14 @@ class Event(models.Model):
     #solo date future
     start_date = models.DateTimeField(validators=[validate_start_date])
     #non può essere prima della start date
-    end_date = models.DateTimeField()#validators=[validate_end_date])
+    end_date = models.DateTimeField(validators=[validate_start_date])
     #può contenere solo caratteri e numeri
     location = models.CharField(max_length=50, validators=[RegexValidator(r'^[a-zA-Z0-9]+$')])
 
+    priority = models.IntegerField(choices=[(1,'ALTO'),(2,'MEDIO'),(3,'BASSO')])
 
-    #priority = models.TextChoices('priority','ALTO MEDIO BASSO')
-    #category = models.TextChoices('category','LAVORO FAMIGLIA SVAGO')
+    category = models.IntegerField(choices=[(1,'LAVORO'),(2,'SVAGO'),(3,'FAMIGLIA'),(4,'SCUOLA')])
+
 
     def __str__(self):
         return self.name
