@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a0e9f00-f061-4de9-9e90-5227c78e5e6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/event/migrations/0002_auto_20201201_1357.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event/migrations/0003_auto_20201201_1558.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event/validators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/events/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/events/test_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/events/test_urls.py" afterDir="false" />
+    <list default="true" id="0a0e9f00-f061-4de9-9e90-5227c78e5e6c" name="Default Changelist" comment="Setup Django REST Framework with CORS and documentation and initial definition of the model 'Event'">
       <change beforePath="$PROJECT_DIR$/.idea/toDoList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/toDoList.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/events/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/events/test_models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="7cfbbd53-b275-4698-8776-296fcf5623c1" />
+  <component name="JupyterTrust" id="a6956fda-e01b-4fda-9e2c-1754c63b5c85" />
   <component name="ProjectId" id="1ksJ4gvwlbMesYqHFuHVrZ1dTrH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,10 +43,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_models.test_check_only_characters_and_number_for_location">
+  <component name="RunManager" selected="Python tests.pytest for test_models.test_startDate_is_before_current_date">
     <configuration name="toDoList" type="Python.DjangoServer" factoryName="Django server">
       <module name="toDoList" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,23 +87,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_models.test_check_only_characters_and_number_for_location" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="toDoList" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/events" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.test_check_only_characters_and_number_for_location&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_models.test_check_only_characters_and_number_for_name" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="toDoList" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,7 +104,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_models.test_more_than_50_characters_for_location" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_models.test_more_than_500_characters_for_description" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="toDoList" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,11 +117,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.test_more_than_50_characters_for_location&quot;" />
+      <option name="_new_target" value="&quot;test_models.test_more_than_500_characters_for_description&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_models.test_startDate_is_after_current_date" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_models.test_more_than_50_characters_for_name" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="toDoList" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,7 +134,24 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.test_startDate_is_after_current_date&quot;" />
+      <option name="_new_target" value="&quot;test_models.test_more_than_50_characters_for_name&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_models.test_startDate_is_before_current_date" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="toDoList" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/events" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_models.test_startDate_is_before_current_date&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -165,7 +159,7 @@
       <module name="toDoList" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/toDoList-YrActGZF/bin/python" />
+      <option name="SDK_HOME" value="C:\Users\Tiziana\.virtualenvs\toDoList-Up5tJvCx\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -181,19 +175,19 @@
     <list>
       <item itemvalue="Django Server.toDoList" />
       <item itemvalue="Python tests.pytest in tests" />
-      <item itemvalue="Python tests.pytest for test_models.test_check_only_characters_and_number_for_description" />
+      <item itemvalue="Python tests.pytest for test_models.test_more_than_50_characters_for_name" />
+      <item itemvalue="Python tests.pytest for test_models.test_startDate_is_before_current_date" />
       <item itemvalue="Python tests.pytest for test_models.test_check_only_characters_and_number_for_name" />
-      <item itemvalue="Python tests.pytest for test_models.test_startDate_is_after_current_date" />
-      <item itemvalue="Python tests.pytest for test_models.test_more_than_50_characters_for_location" />
-      <item itemvalue="Python tests.pytest for test_models.test_check_only_characters_and_number_for_location" />
+      <item itemvalue="Python tests.pytest for test_models.test_more_than_500_characters_for_description" />
+      <item itemvalue="Python tests.pytest for test_models.test_check_only_characters_and_number_for_description" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_models.test_check_only_characters_and_number_for_location" />
-        <item itemvalue="Python tests.pytest for test_models.test_more_than_50_characters_for_location" />
+        <item itemvalue="Python tests.pytest for test_models.test_startDate_is_before_current_date" />
         <item itemvalue="Python tests.pytest for test_models.test_check_only_characters_and_number_for_description" />
-        <item itemvalue="Python tests.pytest for test_models.test_startDate_is_after_current_date" />
+        <item itemvalue="Python tests.pytest for test_models.test_more_than_500_characters_for_description" />
         <item itemvalue="Python tests.pytest for test_models.test_check_only_characters_and_number_for_name" />
+        <item itemvalue="Python tests.pytest for test_models.test_more_than_50_characters_for_name" />
       </list>
     </recent_temporary>
   </component>
@@ -207,8 +201,8 @@
       <updated>1606483175612</updated>
       <workItem from="1606483177023" duration="480000" />
       <workItem from="1606483699533" duration="307000" />
-      <workItem from="1606553155793" duration="6051000" />
-      <workItem from="1606829315777" duration="9122000" />
+      <workItem from="1606553155793" duration="5650000" />
+      <workItem from="1606935295636" duration="12297000" />
     </task>
     <task id="LOCAL-00001" summary="the project is linked to git">
       <created>1606484346221</created>
@@ -231,14 +225,7 @@
       <option name="project" value="LOCAL" />
       <updated>1606558361353</updated>
     </task>
-    <task id="LOCAL-00004" summary="Setup Django REST Framework with CORS and documentation and initial definition of the model 'Event'">
-      <created>1606558864038</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1606558864038</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,57 +237,68 @@
     <option name="LAST_COMMIT_MESSAGE" value="Setup Django REST Framework with CORS and documentation and initial definition of the model 'Event'" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="108" width="1362" height="956" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606831800941">
+    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606953300389">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606953300389" />
+    <state x="488" y="107" width="939" height="876" key="CommitChangelistDialog2" timestamp="1606558537106">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="223" y="67" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606483523746" />
-    <state x="279" y="108" width="1362" height="956" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1606831800941" />
-    <state x="488" y="102" width="939" height="876" key="CommitChangelistDialog2" timestamp="1606558863950">
+    <state x="488" y="107" width="939" height="876" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1606558537106" />
+    <state width="1493" height="329" key="GridCell.Tab.0.bottom" timestamp="1607001441839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="329" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607001441839" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1606558241551" />
+    <state width="1493" height="329" key="GridCell.Tab.0.center" timestamp="1607001441839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="329" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607001441839" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1606558241551" />
+    <state width="1493" height="329" key="GridCell.Tab.0.left" timestamp="1607001441839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="329" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607001441839" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1606558241551" />
+    <state width="1493" height="329" key="GridCell.Tab.0.right" timestamp="1607001441839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="329" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607001441839" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1606558241551" />
+    <state x="277" y="57" width="1016" height="742" key="SettingsEditor" timestamp="1606953422220">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606953422220" />
+    <state x="403" y="88" width="1016" height="742" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1606554942513" />
+    <state x="558" y="285" width="800" height="540" key="Vcs.Push.Dialog.v2" timestamp="1606558376855">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="488" y="102" width="939" height="876" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1606558863950" />
-    <state x="746" y="347" width="424" height="496" key="FileChooserDialogImpl" timestamp="1606831770589">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="746" y="347" width="424" height="496" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1606831770589" />
-    <state width="1874" height="391" key="GridCell.Tab.0.bottom" timestamp="1606838445139">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1874" height="391" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1606838445139" />
-    <state width="1874" height="391" key="GridCell.Tab.0.center" timestamp="1606838445138">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1874" height="391" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1606838445138" />
-    <state width="1874" height="391" key="GridCell.Tab.0.left" timestamp="1606838445133">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1874" height="391" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1606838445133" />
-    <state width="1874" height="391" key="GridCell.Tab.0.right" timestamp="1606838445139">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1874" height="391" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1606838445139" />
-    <state x="403" y="83" width="1016" height="742" key="SettingsEditor" timestamp="1606831388134">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606483471714" />
-    <state x="403" y="83" width="1016" height="742" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1606831388134" />
-    <state x="558" y="280" width="800" height="540" key="Vcs.Push.Dialog.v2" timestamp="1606558876287">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="558" y="280" width="800" height="540" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1606558876287" />
+    <state x="558" y="285" width="800" height="540" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1606558376855" />
     <state x="744" y="464" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606554053205">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="744" y="464" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1606554053205" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/events/test_models.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_description.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_description Coverage Results" MODIFIED="1606837932278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_name.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_name Coverage Results" MODIFIED="1606834242933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_after_current_date.coverage" NAME="pytest for test_models.test_startDate_is_after_current_date Coverage Results" MODIFIED="1606837854338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_name Coverage Results" MODIFIED="1606832776683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_location.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_location Coverage Results" MODIFIED="1606838379583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_location.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_location Coverage Results" MODIFIED="1606838445058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number.coverage" NAME="pytest for test_models.test_check_only_characters_and_number Coverage Results" MODIFIED="1606833023042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_500_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_500_characters_for_name Coverage Results" MODIFIED="1606833810526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$Test__tests_events.coverage" NAME="Test: tests.events Coverage Results" MODIFIED="1606952978014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_name Coverage Results" MODIFIED="1607000965352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_same_day_but_hour_after_start.coverage" NAME="pytest for test_models.test_same_day_but_hour_after_start Coverage Results" MODIFIED="1606957087448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_name.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_name Coverage Results" MODIFIED="1607001021536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_after_current_date.coverage" NAME="pytest for test_models.test_startDate_is_after_current_date Coverage Results" MODIFIED="1606955381530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_500_characters_for_description.coverage" NAME="pytest for test_models.test_more_than_500_characters_for_description Coverage Results" MODIFIED="1607001382254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_in_test_models_py.coverage" NAME="pytest in test_models.py Coverage Results" MODIFIED="1606952999905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_description.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_description Coverage Results" MODIFIED="1607001396806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_before_current_date.coverage" NAME="pytest for test_models.test_startDate_is_before_current_date Coverage Results" MODIFIED="1607001441831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
   </component>
 </project>

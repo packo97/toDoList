@@ -16,7 +16,7 @@ class Event(models.Model):
     #assegnazione automatica
     author = models.ForeignKey(get_user_model(),on_delete=models.CASCADE)
     #solo date future
-    start_date = models.DateTimeField() #validators=[validate_start_date])
+    start_date = models.DateTimeField(validators=[validate_start_date])
     #non può essere prima della start date
     end_date = models.DateTimeField()#validators=[validate_end_date])
     #può contenere solo caratteri e numeri

@@ -11,6 +11,7 @@ coreapi = "*"
 pyyaml = "*"
 pytest-django = "*"
 mixer = "*"
+pytest = "*"
 
 [dev-packages]
 
