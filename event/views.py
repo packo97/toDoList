@@ -10,7 +10,7 @@ from event.serializers import EventSerializer
 
 
 class EventViewSet(viewsets.ModelViewSet):
-    #permissions_classes = [permissions.IsAuthenticatedOrReadOnly]
+    #permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     permission_classes = [IsAuthorOrReadOnly, IsAuthenticated]
     queryset = Event.objects.all()
     serializer_class = EventSerializer

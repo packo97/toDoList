@@ -15,6 +15,7 @@ pytest = "*"
 dj-rest-auth = "*"
 django-allauth = "*"
 permission = "*"
+coverage = "*"
 
 [dev-packages]
 
