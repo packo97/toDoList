@@ -4,7 +4,7 @@ from django.contrib.auth import get_user_model
 from django.core.validators import RegexValidator
 from django.db import models
 
-from event.validators import validate_start_date, validate_end_date
+from event.validators import validate_date
 
 
 def priority_choices():
@@ -22,11 +22,11 @@ class Event(models.Model):
     #può contenere solo caratteri e numeri
     description = models.CharField(max_length=500, validators=[RegexValidator(r'^[a-zA-Z0-9]+$')])
     #assegnazione automatica
-    author = models.ForeignKey(get_user_model(),on_delete=models.CASCADE)
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     #solo date future
-    start_date = models.DateTimeField(validators=[validate_start_date])
+    start_date = models.DateTimeField(validators=[validate_date])
     #non può essere prima della start date
-    end_date = models.DateTimeField(validators=[validate_start_date])
+    end_date = models.DateTimeField(validators=[validate_date])
     #può contenere solo caratteri e numeri
     location = models.CharField(max_length=50, validators=[RegexValidator(r'^[a-zA-Z0-9]+$')])
 
