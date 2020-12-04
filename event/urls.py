@@ -1,6 +1,6 @@
 from rest_framework.routers import SimpleRouter
 
-from event.views import EventViewSet, EventByAuthorViewSet
+from event.views import EventByAuthorViewSet
 
 router = SimpleRouter()
 

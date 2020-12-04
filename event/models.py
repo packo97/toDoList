@@ -1,4 +1,3 @@
-import string
 
 from django.contrib.auth import get_user_model
 from django.core.validators import RegexValidator
@@ -11,6 +10,7 @@ def priority_choices():
     choices = [(0,'ALTO'),(1,'MEDIO'),(2,'BASSO')]
     return choices
 
+
 def category_choices():
     choices = [(1,'LAVORO'),(2,'SVAGO'),(3,'FAMIGLIA'),(4,'SCUOLA')]
     return choices
@@ -18,17 +18,16 @@ def category_choices():
 
 class Event(models.Model):
 
-    #può contenere solo caratteri e numeri
     name = models.CharField(max_length=50, validators=[RegexValidator(r'^[a-zA-Z0-9 ]+$')])
-    #può contenere solo caratteri e numeri
+
     description = models.CharField(max_length=500, validators=[RegexValidator(r'^[a-zA-Z0-9 ]+$')])
-    #assegnazione automatica
+
     author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-    #solo date future
+
     start_date = models.DateTimeField(validators=[validate_date])
-    #non può essere prima della start date
+
     end_date = models.DateTimeField(validators=[validate_date])
-    #può contenere solo caratteri e numeri
+
     location = models.CharField(max_length=50, validators=[RegexValidator(r'^[a-zA-Z0-9 ]+$')])
 
     priority = models.IntegerField(choices=priority_choices())
@@ -37,8 +36,7 @@ class Event(models.Model):
 
     def clean(self, *args, **kwargs):
 
-        if(self.start_date is None or self.end_date is None):
-            print('sono qui')
+        if self.start_date is None or self.end_date is None:
             raise ValueError('start date or end date is Null')
 
         if self.start_date > self.end_date:

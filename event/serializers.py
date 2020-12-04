@@ -18,7 +18,6 @@ class EventSerializer(serializers.ModelSerializer):
         return Event.objects.create(**validated_data)
 
     def get_author(self, instance):
-
         return self.context.get('request').user.id
 
     def get_priority_name(self, instance):
