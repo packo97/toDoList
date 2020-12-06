@@ -21,22 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a0e9f00-f061-4de9-9e90-5227c78e5e6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/migrations/0002_auto_20201201_1357.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/migrations/0003_auto_20201201_1558.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/migrations/0004_auto_20201203_1429.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/migrations/0005_auto_20201203_1444.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/migrations/0006_auto_20201203_1645.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/migrations/0007_auto_20201204_0157.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/event/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/permissions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/validators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/events/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/events/test_urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,8 +189,8 @@
     </configuration>
     <list>
       <item itemvalue="Django Server.toDoList" />
-      <item itemvalue="Python tests.pytest in tests" />
       <item itemvalue="Django tests.Test: tests.events" />
+      <item itemvalue="Python tests.pytest in tests" />
       <item itemvalue="Python tests.pytest in test_models.py" />
       <item itemvalue="Python tests.pytest in test_urls.py" />
       <item itemvalue="Python tests.pytest for test_urls.test_create_event_with_author_differente_from_me" />
@@ -235,7 +220,9 @@
       <workItem from="1606829315777" duration="9122000" />
       <workItem from="1607009589818" duration="2640000" />
       <workItem from="1607013944664" duration="2106000" />
-      <workItem from="1607095231645" duration="4005000" />
+      <workItem from="1607095231645" duration="4906000" />
+      <workItem from="1607168135061" duration="24000" />
+      <workItem from="1607246624838" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="the project is linked to git">
       <created>1606484346221</created>
@@ -286,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607088818726</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="validation finished, coverage around 100%">
+      <created>1607099496828</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607099496828</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +303,8 @@
     <MESSAGE value="Setup Django REST Framework with CORS and documentation and initial definition of the model 'Event'" />
     <MESSAGE value="model modified and serializer modified" />
     <MESSAGE value="validation done, model test done, some url test done" />
-    <option name="LAST_COMMIT_MESSAGE" value="validation done, model test done, some url test done" />
+    <MESSAGE value="validation finished, coverage around 100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="validation finished, coverage around 100%" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="108" width="1362" height="956" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606831800941">
@@ -317,44 +312,44 @@
     </state>
     <state x="223" y="67" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606483523746" />
     <state x="279" y="108" width="1362" height="956" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1606831800941" />
-    <state x="488" y="92" width="939" height="876" key="CommitChangelistDialog2" timestamp="1607088818581">
+    <state x="488" y="87" width="939" height="876" key="CommitChangelistDialog2" timestamp="1607099496384">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="488" y="92" width="939" height="876" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1607088818581" />
+    <state x="488" y="87" width="939" height="876" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1607099496384" />
     <state x="746" y="347" width="424" height="496" key="FileChooserDialogImpl" timestamp="1606831770589">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="746" y="347" width="424" height="496" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1606831770589" />
-    <state width="1874" height="417" key="GridCell.Tab.0.bottom" timestamp="1607099233086">
+    <state width="1874" height="80" key="GridCell.Tab.0.bottom" timestamp="1607107386316">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="723" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607015857843" />
-    <state width="1874" height="417" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1607099233086" />
-    <state width="1874" height="417" key="GridCell.Tab.0.center" timestamp="1607099233086">
+    <state width="1874" height="80" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1607107386316" />
+    <state width="1874" height="80" key="GridCell.Tab.0.center" timestamp="1607107386315">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="723" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607015857843" />
-    <state width="1874" height="417" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1607099233086" />
-    <state width="1874" height="417" key="GridCell.Tab.0.left" timestamp="1607099233085">
+    <state width="1874" height="80" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1607107386315" />
+    <state width="1874" height="80" key="GridCell.Tab.0.left" timestamp="1607107386315">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="723" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607015857843" />
-    <state width="1874" height="417" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1607099233085" />
-    <state width="1874" height="417" key="GridCell.Tab.0.right" timestamp="1607099233086">
+    <state width="1874" height="80" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1607107386315" />
+    <state width="1874" height="80" key="GridCell.Tab.0.right" timestamp="1607107386315">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="723" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607015857843" />
-    <state width="1874" height="417" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1607099233086" />
+    <state width="1874" height="80" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1607107386315" />
     <state x="440" y="115" width="1016" height="742" key="SettingsEditor" timestamp="1607009997494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="440" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607009997494" />
     <state x="403" y="78" width="1016" height="742" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1607004430151" />
-    <state x="558" y="270" width="800" height="540" key="Vcs.Push.Dialog.v2" timestamp="1607088823669">
+    <state x="558" y="265" width="800" height="540" key="Vcs.Push.Dialog.v2" timestamp="1607099504885">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="446" y="194" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607011647560" />
-    <state x="558" y="270" width="800" height="540" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1607088823669" />
+    <state x="558" y="265" width="800" height="540" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1607099504885" />
     <state x="744" y="464" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606554053205">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -377,7 +372,7 @@
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_post_anon_user_get_nothing.coverage" NAME="pytest for test_urls.test_post_anon_user_get_nothing Coverage Results" MODIFIED="1607086564416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1607096313563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_category_value.coverage" NAME="pytest for test_models.test_category_value Coverage Results" MODIFIED="1607083728897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_create_event_with_author_equal_from_me.coverage" NAME="pytest for test_urls.test_create_event_with_author_equal_from_me Coverage Results" MODIFIED="1607099233052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_create_event_with_author_equal_from_me.coverage" NAME="pytest for test_urls.test_create_event_with_author_equal_from_me Coverage Results" MODIFIED="1607099274879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_null_startDate.coverage" NAME="pytest for test_models.test_null_startDate Coverage Results" MODIFIED="1607086010210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_description.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_description Coverage Results" MODIFIED="1606837932278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_after_current_date.coverage" NAME="pytest for test_models.test_startDate_is_after_current_date Coverage Results" MODIFIED="1606837854338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />

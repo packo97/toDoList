@@ -12,7 +12,7 @@ def priority_choices():
 
 
 def category_choices():
-    choices = [(1,'LAVORO'),(2,'SVAGO'),(3,'FAMIGLIA'),(4,'SCUOLA')]
+    choices = [(0,'LAVORO'),(1,'SVAGO'),(2,'FAMIGLIA'),(3,'SCUOLA')]
     return choices
 
 
