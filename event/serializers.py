@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from rest_framework.exceptions import APIException
 
@@ -29,3 +30,9 @@ class EventSerializer(serializers.ModelSerializer):
     def get_category_name(self, instance):
         choices = dict(category_choices())
         return choices[instance.category]
+
+
+class AuthorSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = ('id',)
+        model = get_user_model()

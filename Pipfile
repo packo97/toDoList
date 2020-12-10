@@ -16,6 +16,7 @@ dj-rest-auth = "*"
 django-allauth = "*"
 permission = "*"
 coverage = "*"
+generics = "*"
 
 [dev-packages]
 
