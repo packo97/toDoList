@@ -35,7 +35,7 @@ class Event(models.Model):
     category = models.IntegerField(choices=category_choices())
 
     def clean(self, *args, **kwargs):
-
+        print(self.start_date)
         if self.start_date is None or self.end_date is None:
             raise ValueError('start date or end date is Null')
 

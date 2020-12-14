@@ -27,7 +27,7 @@ class EventByAuthorViewSet(viewsets.ModelViewSet):
 
 
 class AuthorView(RetrieveAPIView):
-
+    permission_classes = [IsAuthenticated]
     serializer_class = AuthorSerializer
 
     lookup_field = 'username'

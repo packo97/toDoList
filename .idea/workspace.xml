@@ -21,14 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0a0e9f00-f061-4de9-9e90-5227c78e5e6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/event/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toDoList/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/toDoList/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toDoList/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/toDoList/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="7cfbbd53-b275-4698-8776-296fcf5623c1" />
+  <component name="JupyterTrust" id="a6956fda-e01b-4fda-9e2c-1754c63b5c85" />
   <component name="ProjectId" id="1ksJ4gvwlbMesYqHFuHVrZ1dTrH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -236,6 +231,8 @@
       <workItem from="1607524531816" duration="6722000" />
       <workItem from="1607552042721" duration="847000" />
       <workItem from="1607606472903" duration="6592000" />
+      <workItem from="1607616284290" duration="10547000" />
+      <workItem from="1607940322550" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="the project is linked to git">
       <created>1606484346221</created>
@@ -327,10 +324,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="validation finished, coverage around 100%" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="108" width="1362" height="956" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606831800941">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="223" y="67" width="1362" height="956" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607646945913">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606483523746" />
+    <state x="223" y="67" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607646945913" />
     <state x="279" y="108" width="1362" height="956" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1606831800941" />
     <state x="488" y="72" width="939" height="876" key="CommitChangelistDialog2" timestamp="1607608480991">
       <screen x="0" y="27" width="1920" height="1053" />
@@ -340,39 +337,40 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="746" y="347" width="424" height="496" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1606831770589" />
-    <state width="1874" height="307" key="GridCell.Tab.0.bottom" timestamp="1607609263186">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="723" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607015857843" />
-    <state width="1874" height="307" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1607609263186" />
-    <state width="1874" height="307" key="GridCell.Tab.0.center" timestamp="1607609263185">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="723" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607015857843" />
-    <state width="1874" height="307" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1607609263185" />
-    <state width="1874" height="307" key="GridCell.Tab.0.left" timestamp="1607609263185">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="723" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607015857843" />
-    <state width="1874" height="307" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1607609263185" />
-    <state width="1874" height="307" key="GridCell.Tab.0.right" timestamp="1607609263186">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="723" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607015857843" />
-    <state width="1874" height="307" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1607609263186" />
-    <state x="440" y="115" width="1016" height="742" key="SettingsEditor" timestamp="1607009997494">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1607730189555">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="440" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607009997494" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607730189555" />
+    <state width="1874" height="307" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1607609263186" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1607730189555">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607730189555" />
+    <state width="1874" height="307" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1607609263185" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1607730189555">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607730189555" />
+    <state width="1874" height="307" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1607609263185" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1607730189555">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607730189555" />
+    <state width="1874" height="307" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1607609263186" />
+    <state x="440" y="115" width="1016" height="742" key="SettingsEditor" timestamp="1607646968044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="440" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607646968044" />
     <state x="403" y="78" width="1016" height="742" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1607004430151" />
     <state x="558" y="260" width="800" height="540" key="Vcs.Push.Dialog.v2" timestamp="1607247744051">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="446" y="194" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607011647560" />
     <state x="558" y="260" width="800" height="540" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1607247744051" />
-    <state x="744" y="459" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607529680878">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="595" y="338" width="363" height="169" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607940324873">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="595" y="338" width="363" height="169" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1607940324873" />
     <state x="744" y="459" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1607529680878" />
     <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607015848711">
       <screen x="0" y="0" width="1536" height="824" />
@@ -380,27 +378,27 @@
     <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607015848711" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_name.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_name Coverage Results" MODIFIED="1606834242933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_events_retrieve_a_single_event.coverage" NAME="pytest for test_urls.test_events_retrieve_a_single_event Coverage Results" MODIFIED="1607096220179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_name Coverage Results" MODIFIED="1606832776683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_location.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_location Coverage Results" MODIFIED="1606838379583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_location.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_location Coverage Results" MODIFIED="1606838445058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_priority_value.coverage" NAME="pytest for test_models.test_priority_value Coverage Results" MODIFIED="1607083693501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$Test__tests_events.coverage" NAME="Test: tests.events Coverage Results" MODIFIED="1607096360585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_create_event_with_author_differente_from_me.coverage" NAME="pytest for test_urls.test_create_event_with_author_differente_from_me Coverage Results" MODIFIED="1607099022169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_500_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_500_characters_for_name Coverage Results" MODIFIED="1606833810526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_post_anon_user_get_nothing.coverage" NAME="pytest for test_urls.test_post_anon_user_get_nothing Coverage Results" MODIFIED="1607086564416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1607096313563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_category_value.coverage" NAME="pytest for test_models.test_category_value Coverage Results" MODIFIED="1607083728897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_create_event_with_author_equal_from_me.coverage" NAME="pytest for test_urls.test_create_event_with_author_equal_from_me Coverage Results" MODIFIED="1607099274879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_name.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_name Coverage Results" MODIFIED="1606834242933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_location.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_location Coverage Results" MODIFIED="1606838379583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_priority_value.coverage" NAME="pytest for test_models.test_priority_value Coverage Results" MODIFIED="1607083693501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_null_startDate.coverage" NAME="pytest for test_models.test_null_startDate Coverage Results" MODIFIED="1607086010210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_description.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_description Coverage Results" MODIFIED="1606837932278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_after_current_date.coverage" NAME="pytest for test_models.test_startDate_is_after_current_date Coverage Results" MODIFIED="1606837854338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_endDate_before_startDate.coverage" NAME="pytest for test_models.test_endDate_before_startDate Coverage Results" MODIFIED="1607082272433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_in_test_models_py.coverage" NAME="pytest in test_models.py Coverage Results" MODIFIED="1607099037713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
-    <SUITE FILE_PATH="coverage/toDoList$pytest_in_test_urls_py.coverage" NAME="pytest in test_urls.py Coverage Results" MODIFIED="1607099061280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_get_user_not_author.coverage" NAME="pytest for test_urls.test_get_user_not_author Coverage Results" MODIFIED="1607095408721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_after_current_date.coverage" NAME="pytest for test_models.test_startDate_is_after_current_date Coverage Results" MODIFIED="1606837854338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_in_test_urls_py.coverage" NAME="pytest in test_urls.py Coverage Results" MODIFIED="1607099061280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_events_retrieve_a_single_event.coverage" NAME="pytest for test_urls.test_events_retrieve_a_single_event Coverage Results" MODIFIED="1607096220179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_endDate_before_startDate.coverage" NAME="pytest for test_models.test_endDate_before_startDate Coverage Results" MODIFIED="1607082272433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_50_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_50_characters_for_name Coverage Results" MODIFIED="1606832776683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_create_event_with_author_differente_from_me.coverage" NAME="pytest for test_urls.test_create_event_with_author_differente_from_me Coverage Results" MODIFIED="1607099022169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_location.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_location Coverage Results" MODIFIED="1606838445058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_post_anon_user_get_nothing.coverage" NAME="pytest for test_urls.test_post_anon_user_get_nothing Coverage Results" MODIFIED="1607086564416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_more_than_500_characters_for_name.coverage" NAME="pytest for test_models.test_more_than_500_characters_for_name Coverage Results" MODIFIED="1606833810526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_category_value.coverage" NAME="pytest for test_models.test_category_value Coverage Results" MODIFIED="1607083728897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number.coverage" NAME="pytest for test_models.test_check_only_characters_and_number Coverage Results" MODIFIED="1606833023042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_check_only_characters_and_number_for_description.coverage" NAME="pytest for test_models.test_check_only_characters_and_number_for_description Coverage Results" MODIFIED="1606837932278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_in_test_models_py.coverage" NAME="pytest in test_models.py Coverage Results" MODIFIED="1607099037713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
     <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_models_test_startDate_is_before_current_date.coverage" NAME="pytest for test_models.test_startDate_is_before_current_date Coverage Results" MODIFIED="1607095875172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
+    <SUITE FILE_PATH="coverage/toDoList$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1607096313563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/toDoList$pytest_for_test_urls_test_create_event_with_author_equal_from_me.coverage" NAME="pytest for test_urls.test_create_event_with_author_equal_from_me Coverage Results" MODIFIED="1607099274879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/events" />
   </component>
 </project>
